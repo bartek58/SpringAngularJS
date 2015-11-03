@@ -18,7 +18,9 @@ public class HomeController {
 
 	@RequestMapping(value = "/springAngularJS", method = RequestMethod.GET)
 	public @ResponseBody String getName() {
-		return "Stringer Bell";
+		String value="STe";
+		return Tools.changeToLowerCase(value);
+		
 	}
 
 }
